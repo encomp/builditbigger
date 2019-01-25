@@ -15,7 +15,7 @@ import javax.annotation.Nonnull;
 
 /** Specifies a jokes model. */
 @AutoValue
-public abstract class Jokes implements Serializable {
+abstract class Jokes implements Serializable {
 
   public abstract ImmutableList<Joke> jokes();
 
