@@ -20,12 +20,12 @@ abstract class Jokes implements Serializable {
   public abstract ImmutableList<Joke> jokes();
 
   @Nonnull
-  public static final Builder builder() {
+  static final Builder builder() {
     return new Builder();
   }
 
   /** Builder class to instantiate immutable objects of {@link Jokes}. */
-  public static final class Builder extends TypeAdapter<Jokes> {
+  static final class Builder extends TypeAdapter<Jokes> {
     private static final Gson GSON =
         new GsonBuilder().registerTypeAdapter(Joke.class, Joke.builder()).create();
 
