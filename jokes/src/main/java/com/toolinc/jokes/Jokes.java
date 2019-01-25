@@ -44,7 +44,7 @@ abstract class Jokes implements Serializable {
       return build();
     }
 
-    public Jokes build() {
+    Jokes build() {
       return new AutoValue_Jokes(ImmutableList.copyOf(jokes));
     }
   }
