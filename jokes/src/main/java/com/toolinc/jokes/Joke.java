@@ -1,6 +1,8 @@
 package com.toolinc.jokes;
 
 import com.google.auto.value.AutoValue;
+import com.google.common.base.Preconditions;
+import com.google.common.base.Strings;
 import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -46,6 +48,30 @@ public abstract class Joke implements Serializable {
     private String answer;
 
     private Builder() {}
+
+    public Builder setCategory(String category) {
+      Preconditions.checkArgument(!Strings.isNullOrEmpty(category));
+      this.category = category;
+      return this;
+    }
+
+    public Builder setTitle(String title) {
+      Preconditions.checkArgument(!Strings.isNullOrEmpty(title));
+      this.title = title;
+      return this;
+    }
+
+    public Builder setQuestion(String question) {
+      Preconditions.checkArgument(!Strings.isNullOrEmpty(question));
+      this.question = question;
+      return this;
+    }
+
+    public Builder setAnswer(String answer) {
+      Preconditions.checkArgument(!Strings.isNullOrEmpty(answer));
+      this.answer = answer;
+      return this;
+    }
 
     @Override
     public void write(JsonWriter jsonWriter, Joke joke) throws IOException {
