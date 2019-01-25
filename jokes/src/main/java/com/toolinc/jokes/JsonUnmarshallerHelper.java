@@ -14,6 +14,14 @@ import java.nio.file.Paths;
 final class JsonUnmarshallerHelper {
   private JsonUnmarshallerHelper() {}
 
+  static final Jokes toJokes(Class clazz, String fileName) {
+    try {
+      return Jokes.builder().fromJson(toString(clazz, fileName));
+    } catch (IOException exception) {
+      throw new IllegalStateException("Unable to unmarshal into a step instance.");
+    }
+  }
+
   static final Joke toJoke(Class clazz, String fileName) {
     try {
       return Joke.builder().fromJson(toString(clazz, fileName));

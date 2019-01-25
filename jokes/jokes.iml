@@ -27,6 +27,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Gradle: javax.inject-1" level="project" />
     <orderEntry type="library" exported="" name="Gradle: guava-27.0.1-android" level="project" />
     <orderEntry type="library" exported="" name="Gradle: auto-value-annotations-1.6.3" level="project" />
     <orderEntry type="library" exported="" name="Gradle: gson-2.8.5" level="project" />

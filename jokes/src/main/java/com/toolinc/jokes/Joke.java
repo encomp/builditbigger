@@ -45,6 +45,8 @@ public abstract class Joke implements Serializable {
     @SerializedName("answer")
     private String answer;
 
+    private Builder() {}
+
     @Override
     public void write(JsonWriter jsonWriter, Joke joke) throws IOException {
       throw new UnsupportedOperationException("This operation is not supported yet...");
