@@ -30,4 +30,11 @@ public final class JokesTest {
     Jokes jokes = Jokes.builder().fromJson(JSON);
     assertThat(jokes.jokes().size()).isEqualTo(2L);
   }
+
+  @Test
+  public void shouldNotCreateJson() throws IOException {
+    expectedException.expect(UnsupportedOperationException.class);
+    expectedException.expectMessage("supported");
+    Jokes.builder().write(JSON_WRITER, Jokes.builder().fromJson(JSON));
+  }
 }

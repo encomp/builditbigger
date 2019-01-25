@@ -1,6 +1,44 @@
-{
-  "category": "Birthday Jokes",
-  "title": "THE HUNTER’S BIRTHDAY",
-  "question": "What do you get a hunter for his birthday?",
-  "answer": "A birthday pheasant"
-}
+[
+  {
+    "category": "Birthday Jokes",
+    "title": "THE HUNTER’S BIRTHDAY",
+    "question": "What do you get a hunter for his birthday?",
+    "answer": "A birthday pheasant"
+  },
+  {
+    "category": "Birthday Jokes",
+    "title": "BIRTHDAY CLAM",
+    "question": "What does a clam do on his birthday?",
+    "answer": "He shellabrates!"
+  },
+  {
+    "category": "Birthday Jokes",
+    "title": "Kangaroo Birthday",
+    "question": "What do you say to a kangaroo on its birthday?",
+    "answer": "Hoppy Birthday!"
+  },
+  {
+    "category": "Cat Jokes",
+    "title": "POSTURE CAT",
+    "question": "What did the grandma cat say to her grandson when she saw him slouching?",
+    "answer": "You need to pay more attention to my pawsture."
+  },
+  {
+    "category": "Cat Jokes",
+    "title": "CAT AND MOUSE",
+    "question": "What did the cat say when the mouse got away?",
+    "answer": "You've got to be kitten me!"
+  },
+  {
+    "category": "Cat Jokes",
+    "title": "LET’S GO SHOPPING!",
+    "question": "Why don't cats like online shopping?",
+    "answer": "They prefer a cat-alogue."
+  },
+  {
+    "category": "Marriage Jokes",
+    "title": "Don’t Kiss!",
+    "question": "Wife: 'Our new neighbor always kisses his wife when he leaves for work. Why don't you do that?'",
+    "answer": "Husband: 'How can I? I don't even know her.'"
+  }
+]

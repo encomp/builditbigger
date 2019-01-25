@@ -18,7 +18,7 @@ import javax.annotation.Nonnull;
 @AutoValue
 public abstract class Jokes implements Serializable {
 
-  public abstract List<Joke> jokes();
+  public abstract ImmutableList<Joke> jokes();
 
   @Nonnull
   public static final Builder builder() {
