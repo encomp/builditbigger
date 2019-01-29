@@ -33,14 +33,8 @@ public class MyEndpoint {
     return response;
   }
 
-  /**
   @ApiMethod(name = "joke")
-  public Joke tellJoke() {
-    return Joke.builder()
-        .setTitle("title")
-        .setCategory("category")
-        .setAnswer("answer")
-        .setQuestion("question")
-        .build();
-  }**/
+  public MyJoke joke() {
+    return new MyJoke("category", "title", "question", "answer");
+  }
 }
