@@ -11,15 +11,12 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.io.Serializable;
 
-import javax.annotation.Nonnull;
-
 /** Specifies a jokes model. */
 @AutoValue
 abstract class Jokes implements Serializable {
 
   abstract ImmutableList<Joke> jokes();
 
-  @Nonnull
   static final Builder builder() {
     return new Builder();
   }

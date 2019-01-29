@@ -1,15 +1,4 @@
-buildscript {
-    dependencies {
-        classpath "net.ltgt.gradle:gradle-apt-plugin:0.20"
-    }
-}
-
-plugins {
-    id "net.ltgt.apt" version "0.20"
-}
-
 apply plugin: 'java-library'
-apply plugin: "net.ltgt.apt"
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

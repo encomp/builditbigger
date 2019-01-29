@@ -16,7 +16,7 @@ public final class JokesProviderTest {
 
   @Test
   public void shouldCreateJokes() throws IOException {
-    ImmutableList<Joke> jokes = new JokesProvider().get();
+    ImmutableList<Joke> jokes = new JokesProvider("/jokes.json").get();
     assertThat(jokes.size()).isEqualTo(7);
   }
 }

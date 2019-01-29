@@ -12,8 +12,6 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.io.Serializable;
 
-import javax.annotation.Nonnull;
-
 /** Specifies a joke model. */
 @AutoValue
 public abstract class Joke implements Serializable {
@@ -26,7 +24,6 @@ public abstract class Joke implements Serializable {
 
   public abstract String answer();
 
-  @Nonnull
   public static final Builder builder() {
     return new Builder();
   }

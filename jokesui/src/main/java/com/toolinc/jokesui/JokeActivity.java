@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
-import com.toolinc.jokes.Joke;
-
 /** Displays a {@link Joke}. */
 public final class JokeActivity extends AppCompatActivity {
   public static final String JOKE = "JOKE";
